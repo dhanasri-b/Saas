@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0b0f19;
+  color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+}
+
+.logo span {
+  color: #7c7cff;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.nav-btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(45deg, #7c7cff, #00d4ff);
+  color: #000;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background: radial-gradient(circle at top left, #7c7cff, transparent 40%),
+              radial-gradient(circle at bottom right, #00d4ff, transparent 40%);
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  color: #ccc;
+  max-width: 450px;
+}
+
+.hero-buttons button {
+  margin-right: 15px;
+}
+
+.primary {
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(45deg, #7c7cff, #00d4ff);
+  cursor: pointer;
+}
+
+.secondary {
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: 1px solid #555;
+  background: transparent;
+  color: #fff;
+}
+
+/* Hero Card */
+.hero-card {
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+  border-radius: 20px;
+  width: 260px;
+}
+
+/* Features */
+.features {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 260px;
+  padding: 30px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+/* CTA */
+.cta {
+  padding: 80px 40px;
+  text-align: center;
+  background: linear-gradient(45deg, #7c7cff, #00d4ff);
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-card {
+    margin-top: 40px;
+  }
+}
