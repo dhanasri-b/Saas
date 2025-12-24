@@ -1,0 +1,265 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: 'Inter', sans-serif;
+
+}
+
+body {
+
+  background: #f9fafb;
+
+  color: #111827;
+
+}
+
+/* Navbar */
+
+.navbar {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 20px 10%;
+
+  background: white;
+
+  position: sticky;
+
+  top: 0;
+
+}
+
+nav a {
+
+  margin-left: 20px;
+
+  text-decoration: none;
+
+  color: #374151;
+
+}
+
+.btn {
+
+  background: #6366f1;
+
+  color: white;
+
+  padding: 8px 14px;
+
+  border-radius: 6px;
+
+}
+
+/* Hero */
+
+.hero {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 80px 10%;
+
+  gap: 40px;
+
+}
+
+.hero img {
+
+  width: 420px;
+
+}
+
+.hero-text h2 {
+
+  font-size: 42px;
+
+  margin-bottom: 20px;
+
+}
+
+.hero-text p {
+
+  font-size: 18px;
+
+  color: #4b5563;
+
+}
+
+.hero-buttons button {
+
+  margin-right: 10px;
+
+  padding: 12px 20px;
+
+  border-radius: 6px;
+
+  border: none;
+
+  cursor: pointer;
+
+}
+
+.primary {
+
+  background: #6366f1;
+
+  color: white;
+
+}
+
+.secondary {
+
+  background: #e5e7eb;
+
+}
+
+/* Trusted */
+
+.trusted {
+
+  text-align: center;
+
+  padding: 40px 10%;
+
+}
+
+.logos span {
+
+  margin: 0 15px;
+
+  font-weight: bold;
+
+  color: #9ca3af;
+
+}
+
+/* Features */
+
+.features {
+
+  padding: 60px 10%;
+
+  text-align: center;
+
+}
+
+.feature-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 30px;
+
+  margin-top: 30px;
+
+}
+
+.feature {
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 10px;
+
+}
+
+/* Pricing */
+
+.pricing {
+
+  padding: 60px 10%;
+
+  background: #f3f4f6;
+
+  text-align: center;
+
+}
+
+.pricing-cards {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 30px;
+
+  margin-top: 30px;
+
+}
+
+.price-card {
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 10px;
+
+}
+
+.highlight {
+
+  border: 2px solid #6366f1;
+
+}
+
+/* CTA */
+
+.cta {
+
+  padding: 80px 10%;
+
+  background: #6366f1;
+
+  color: white;
+
+  text-align: center;
+
+}
+
+/* Footer */
+
+footer {
+
+  text-align: center;
+
+  padding: 20px;
+
+  background: #111827;
+
+  color: #9ca3af;
+
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .hero {
+
+    flex-direction: column;
+
+    text-align: center;
+
+  }
+
+  .hero img {
+
+    width: 100%;
+
+  }
+
+}
